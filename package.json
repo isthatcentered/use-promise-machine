@@ -33,6 +33,10 @@
         "release-it": "^12.0.1",
         "ts-jest": "^24.0.2"
     },
+    "homepage": "https://github.com/isthatcentered/use-promise-machine#readme",
+    "bugs": {
+        "url": "https://github.com/isthatcentered/use-promise-machine/issues"
+    },
     "dependencies": {
         "typescript": "^3.4.5"
     }
