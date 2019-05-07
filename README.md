@@ -9,31 +9,31 @@ npm i use-promise-machine -D
 ```typescript jsx
 function _HomePage( props: {})
 {
-	const myFunctionThatReturnsAPromise = useCallback(() => fetch("/waffles"), []),
-	      dataPromise                    = usePromise(myFunctionThatReturnsAPromise)
-	
-	return (
-		<div>
-			{(() => {
-				switch ( dataPromise.state ) {
-					case usePromise.STATES.PENDING:
-						return <p>Loading...</p>
-					
-					case usePromise.STATES.REJECTED:
-						return <p>💩 Something went wrong</p>
-	
-					// You can merge switch cases if you don't care about data or empty state				
-					case usePromise.STATES.FULFILLED_DATA:
-					case usePromise.STATES.FULFILLED_EMPTY:
-						return <GrouppedIssuesList
-							state={state}
-							issues={state.issues}
-						/>
-					default:
-						// will never be reached
-				}
-			})()}
-		</div>)
+  const myFunctionThatReturnsAPromise = useCallback(() => fetch("/waffles"), []),
+        dataPromise                    = usePromise(myFunctionThatReturnsAPromise)
+  
+  return (
+    <div>
+      {(() => {
+        switch ( dataPromise.state ) {
+          case usePromise.STATES.PENDING:
+            return <p>Loading...</p>
+          
+          case usePromise.STATES.REJECTED:
+            return <p>💩 Something went wrong</p>
+  
+          // You can merge switch cases if you don't care about data or empty state        
+          case usePromise.STATES.FULFILLED_DATA:
+          case usePromise.STATES.FULFILLED_EMPTY:
+            return <GrouppedIssuesList
+              state={state}
+              issues={state.issues}
+            />
+          default:
+            // will never be reached
+        }
+      })()}
+    </div>)
 }
 ```
 
