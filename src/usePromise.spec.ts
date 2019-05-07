@@ -1,6 +1,6 @@
 import "jest-then"
 import { renderHook } from "react-hooks-testing-library"
-import { usePromiseMachine } from "./usePromiseMachine"
+import { usePromiseMachine } from "."
 
 
 
