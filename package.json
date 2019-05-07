@@ -1,6 +1,6 @@
 {
     "name": "use-promise-machine",
-    "version": "1.0.0-beta.0",
+    "version": "1.0.0",
     "description": "React promises as a state machine. Tells you explicitly if your promise is PENDING || FULFILLED_DATA || FULFILLED_EMPTY || REJECTED",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -41,6 +41,5 @@
     "bugs": {
         "url": "https://github.com/isthatcentered/use-promise-machine/issues"
     },
-    "dependencies": {
-    }
+    "dependencies": {}
 }
