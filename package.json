@@ -34,13 +34,13 @@
         "react-hooks-testing-library": "^0.5.0",
         "react-test-renderer": "^16.8.6",
         "release-it": "^12.0.1",
-        "ts-jest": "^24.0.2"
+        "ts-jest": "^24.0.2",
+        "typescript": "^3.4.5"
     },
     "homepage": "https://github.com/isthatcentered/use-promise-machine#readme",
     "bugs": {
         "url": "https://github.com/isthatcentered/use-promise-machine/issues"
     },
     "dependencies": {
-        "typescript": "^3.4.5"
     }
 }
